@@ -1,0 +1,528 @@
+/*        Browser Reset         */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+code,
+del,
+dfn,
+img,
+ins,
+kbd,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/*        HTML5 display-role reset for older browsers         */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* -----------------  COLOR GUIDE -----------------
+    _____________
+    Oranges:
+    Orange #e79433
+    Dark Orange #bd6010
+    _____________
+    Hot Pink: 
+    #bc1642
+    _____________
+    Black:
+    #0f0f0f
+    _____________
+    White:
+    #f4f3f2
+-----------------------------------------------------*/
+/* --------------- Type ------------------ */
+
+body {
+  color: #0f0f0f;
+  font-family: Roboto, Calibri, Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.45;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  max-width: 760px;
+}
+
+h2,
+h3,
+h4,
+h5 {
+  color: #363636;
+  font-family: Roboto, Calibri, Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.15;
+  margin: 1.33rem 0;
+}
+
+h1 {
+  color: #bc1642;
+  font-family: "Roboto Condensed", Calibri, Helvetica, Arial, sans-serif;
+  font-family: "Vollkorn";
+  font-size: 3.052rem;
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.text-large {
+  font-size: 3.052rem;
+}
+
+.text-medium {
+  font-size: 1.953rem;
+}
+
+small,
+.text_small {
+  font-size: 0.8rem;
+}
+
+p,
+ul,
+ol,
+pre,
+table,
+blockquote {
+  line-height: 1.5;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+em,
+.italic {
+  font-style: italic;
+}
+
+strong,
+b,
+.bold {
+  font-weight: 600;
+}
+
+/* ------------------- Links ------------------*/
+
+a {
+  color: #bc1642;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:visited {
+  color: #77132e;
+}
+
+a:hover {
+  color: #fa205a;
+}
+
+a:active {
+  color: #e79433;
+}
+
+/* -------------------Main styles-------------------*/
+body {
+  font-family: Roboto, Calibri, Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  background-color: #f4f3f2;
+  color: #0f0f0f;
+}
+
+button {
+  display: block;
+}
+
+hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+
+.container-content {
+  padding: 2rem 2rem 0;
+}
+
+.article {
+  padding: 0 0 1rem 0;
+  margin-top: 2rem;
+}
+
+.article-image img {
+  max-width: 450px;
+  width: 100%;
+}
+
+.article-caption {
+  margin-top: 0;
+  font-size: 0.8em;
+  text-transform: uppercase;
+}
+
+.sidebar {
+  background-color: #e6e6e6;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+
+.sidebar-heading {
+  font-size: 1.953em;
+}
+
+.sidebar li {
+  margin-bottom: 1em;
+}
+
+.sidebar a[href="#"] {
+  /* for testing color only */
+  color: #bc1642;
+  font-size: 1em;
+  font-weight: 300;
+}
+
+@media screen and (min-width: 780px) {
+  .article {
+    padding: 0 4em 1em 0;
+  }
+
+  .sidebar {
+    max-height: 400px;
+    padding-left: 3rem;
+  }
+}
+
+@media screen and (min-width: 1094px) {
+  .container-content {
+    padding: 3rem 6rem 0;
+  }
+}
+
+@media screen and (min-width: 1160px) {
+  .article {
+    padding: 0 1.5em 1em 0;
+  }
+}
+
+/* --------------- Main Navigation ------------------ */
+
+.header {
+  background: #292929;
+}
+
+.logo {
+  margin-top: 1rem;
+  max-width: 200px;
+}
+
+.main-nav {
+  align-items: center;
+  display: flex;
+  font-family: "Roboto Condensed";
+  font-weight: 300;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-right: 1rem;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.main-nav ul a {
+  display: inline-block;
+  padding: .8rem 0;
+  color: #ffffff;
+  font-weight: 300;
+  text-align: center;
+  width: 100%;
+}
+
+.main-nav ul a:hover {
+  color: #e79433;
+  transition: .5s all;
+}
+
+.main-nav ul a:active {
+  color: #bd6010;
+}
+
+.main-nav li {
+  width: 20%;
+}
+
+.donate {
+  text-align: center;
+}
+
+.donate a {
+  border: 1px solid #8b8a8a;
+  transition: 1s all;
+}
+
+.donate a:hover {
+  background: #a8143c;
+  border: 1px solid #a8143c;
+  transition: 1s all;
+}
+
+@media screen and (min-width: 560px) {
+
+  .header {
+    padding: 0 3rem;
+  }
+
+  .main-nav li {
+    margin-right: 0;
+  }
+
+  .donate {
+    margin-left: 1rem;
+  }
+
+}
+
+@media screen and (min-width: 990px) {
+  .logo {
+    margin-top: 0;
+  }
+
+  .donate {
+    margin-left: 3rem;
+  }
+
+}
+
+
+@media screen and (min-width: 1280px) {
+  .logo {
+    max-width: 300px;
+  }
+
+  .header {
+    padding: 0 6rem;
+  }
+
+  .donate {
+    margin-left: 5rem;
+  }
+}
+
+/* close min-width: 1280px */
+/* ------------------- Hero Styles -------------------*/
+
+.hero-inside {
+  background-image: url(../images/hero-inside.jpg);
+  background-size: cover;
+  padding: 2rem;
+}
+
+.hero-heading {
+  color: #e79433;
+  font-size: 4.2rem;
+}
+
+.hero-subheader {
+  color: #ffffff;
+  margin-top: 0;
+}
+
+@media screen and (min-width: 780px) {
+  .hero-inside {
+    padding: 3rem 6rem;
+  }
+}
+
+/* --------------- Form Styles ------------------ */
+
+.form label {
+  display: block;
+  margin: .5em 0 0 0;
+  /*margin: 0 0 1em 0;*/
+}
+
+.form input {
+  padding: 10px;
+  border: none;
+  background: rgb(199, 199, 199);
+}
+
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="email"],
+.form input[type="number"] {
+  display: block;
+}
+
+.form legend {
+  font-size: 1.666666667em;
+  line-height: 1.866666666em;
+  margin-top: 0.93333333em;
+  margin-bottom: 0.93333333em;
+}
+
+.form p {
+  margin-top: 0;
+}
+
+.form fieldset {
+  border: 1px solid rgb(70, 70, 70);
+  padding: 0 15px;
+}
+
+.form button,
+.form input[type="submit"] {
+  border: none;
+  padding: .5em 2em;
+  margin-top: 1em;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  background-color: #e79433;
+  color: #f4f3f2;
+  font-family: "roboto";
+}
+
+.form button:hover {
+  background-color: #ffac4b;
+}
+
+.form-section {
+  border-top: 1px solid;
+  padding: .5em 0;
+  margin: .5em 0;
+}
+
+/* --------------- Footer ------------------ */
+.footer {
+  margin-top: 2em;
+  background-color: #292929;
+  padding: 2rem;
+}
+
+.footer p {
+  color: #f4f3f2;
+  text-align: center;
+}
